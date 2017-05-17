@@ -36,7 +36,7 @@ class BuycraftCommand extends Command
     public function execute(CommandSender $sender, $commandLabel, array $args)
     {
         if (!$sender->hasPermission('buycraft.admin')) {
-            $sender->sendMessage(TextFormat::RED . "You don't have permission to use Buycraft administrative commands.");
+            $sender->sendMessage(TextFormat::RED . "You don't have permission to use this command, please use the perm buycraft.admin");
             return true;
         }
 
